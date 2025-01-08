@@ -1,0 +1,61 @@
+ /* Basic styles for the page layout */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+
+  /* Styles for the greeting message with transition effects */ 
+  #greetButton {
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+   /* Pressed Effect for the button */
+   #greetButton:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    }
+    #username {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+   /* Class to show the greeting message with animation */
+  .greeting {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;;
+  }
+
+  .greeting.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Styles for the error message */
+  .error {
+    color: red;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  
