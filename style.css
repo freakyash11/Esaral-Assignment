@@ -58,4 +58,28 @@ body {
     margin-top: 10px;
   }
 
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    input {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .greeting {
+      font-size: 1.2rem;
+    }
+
+    .error {
+      font-size: 0.9rem;
+    }
+  }
+
   
